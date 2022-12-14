@@ -1,0 +1,105 @@
+body{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+#home{
+    background-color: lightcoral;
+}
+.overLay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    height: 100vh;
+   transform: translateX(-100vw);
+}
+.overlayShow{
+    transition: all 0.4s ease-in-out;
+    transform: translateX(0vw);
+}
+.overlayHide{
+    transition: all 0.8s ease-in-out;
+    transform: translateX(-100vw);
+}
+nav ul{
+ 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+
+}
+nav ul{
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    position: relative;
+    top: 45%;
+    color: white;
+    left: 45%;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+nav ul li{
+    height: 25%;
+    overflow: hidden;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+ 
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+     background-color: chartreuse;
+}
+.two{
+ background-color: chocolate;
+}
+.three{
+background-color: coral;
+}
+.four{
+background-color:crimson;
+}
